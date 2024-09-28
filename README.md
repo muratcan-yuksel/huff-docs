@@ -8,6 +8,8 @@
 
 Install dependencies by running `yarn install`.
 
+Then run export NODE_OPTIONS=--openssl-legacy-provider
+
 Build the vuepress site by running `yarn build`.
 
 To run the site locally, execute `yarn dev`.
@@ -19,8 +21,3 @@ In [src/README.md](./src/README.md), the home page of the site is defined. Each 
 To add a new page, the page contents must be written in an [src](./src/) subdirectory. This will host the page at `https://docs.huff.sh/<page-name>` but will not create an item in the navbar. In order to add the new page to the navbar, an entry must be added to the Vuepress config file located in [src/.vuepress/config.js](./src/.vuepress/config.js).
 
 Page and comprehensive site styles can be defined in [src/.vuepress/styles/](./src/.vuepress/styles/).
-
-
-
-
-
